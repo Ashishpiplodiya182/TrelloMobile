@@ -1,0 +1,13 @@
+2021-11-09 14:50:18,661 459  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 14:50:21,760 3558 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 14:50:21,761 3559 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 14:50:21,761 3559 [main] INFO  com.trello.android.baseutil.BaseTest - Launching the Emulator
+2021-11-09 14:52:01,781 103579 [main] INFO  com.trello.android.baseutil.BaseTest - Emulator launched successfully!
+2021-11-09 14:52:01,787 103585 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 14:52:01,792 103590 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_14_52_01
+2021-11-09 14:52:02,113 103911 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 14:52:02,124 103922 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-09 14:52:57,959 159757 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-09 14:52:59,347 161145 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped
+2021-11-09 14:52:59,349 161147 [main] INFO  com.trello.android.baseutil.BaseTest - Killing emulator...
+2021-11-09 14:52:59,726 161524 [main] INFO  com.trello.android.baseutil.BaseTest - Emulator closed successfully!

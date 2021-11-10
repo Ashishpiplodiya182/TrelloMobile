@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="18" total="28" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-10T16:56:01 IST" name="trello" finished-at="2021-11-10T17:27:17 IST" duration-ms="1875752">
+    <groups>
+    </groups>
+    <test started-at="2021-11-10T16:56:01 IST" name="trello" finished-at="2021-11-10T17:27:17 IST" duration-ms="1875752">
+      <class name="com.trello.android.testscripts.Trello_006">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_006@46cdf8bd]" started-at="2021-11-10T17:13:04 IST" name="launchApp" finished-at="2021-11-10T17:13:25 IST" duration-ms="21503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_006(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_006@46cdf8bd]" started-at="2021-11-10T17:13:25 IST" name="tc_Trello_006" description="Description:Verify that whether user is able to copy the list and check all the contents are same as the old List in the new List" data-provider="data1" finished-at="2021-11-10T17:16:17 IST" duration-ms="172001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_006]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Script Writing]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[To Done Now]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_006 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_006@46cdf8bd]" started-at="2021-11-10T17:16:17 IST" name="closeBrowser" finished-at="2021-11-10T17:16:19 IST" duration-ms="1995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_006 -->
+      <class name="com.trello.android.testscripts.Trello_005">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_005@2a7f1f10]" started-at="2021-11-10T17:09:43 IST" name="launchApp" finished-at="2021-11-10T17:10:33 IST" duration-ms="49994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_005(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_005@2a7f1f10]" started-at="2021-11-10T17:10:33 IST" name="tc_Trello_005" description="Description:Verify that whether user is able to move the all cards from one List to another List" data-provider="data1" finished-at="2021-11-10T17:13:00 IST" duration-ms="147384" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_005]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Review TestCase]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[To Done Now]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_005 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_005@2a7f1f10]" started-at="2021-11-10T17:13:00 IST" name="closeBrowser" finished-at="2021-11-10T17:13:04 IST" duration-ms="3555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_005 -->
+      <class name="com.trello.android.testscripts.Trello_004">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_004@298a5e20]" started-at="2021-11-10T17:06:15 IST" name="launchApp" finished-at="2021-11-10T17:06:40 IST" duration-ms="24934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_004(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_004@298a5e20]" started-at="2021-11-10T17:06:40 IST" name="tc_Trello_004" description="Description:Verify that whether user is able to move the card after Editing List name and Card name" data-provider="data1" finished-at="2021-11-10T17:09:40 IST" duration-ms="179908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_004]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Review TestCase]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[To DO Till Evening]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[To DO Till Evening]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Script Writing]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[To Done Now]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_004 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_004@298a5e20]" started-at="2021-11-10T17:09:40 IST" name="closeBrowser" finished-at="2021-11-10T17:09:43 IST" duration-ms="2579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_004 -->
+      <class name="com.trello.android.testscripts.Trello_003">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_003@2ddc9a9f]" started-at="2021-11-10T17:02:09 IST" name="launchApp" finished-at="2021-11-10T17:02:40 IST" duration-ms="30562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_003(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_003@2ddc9a9f]" started-at="2021-11-10T17:02:40 IST" name="tc_Trello_003" description="Description: Verify that whether user is able to Re-open the board after closing the board" data-provider="data1" finished-at="2021-11-10T17:05:53 IST" duration-ms="192652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Pages Distribution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_003 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_003@2ddc9a9f]" started-at="2021-11-10T17:05:53 IST" name="closeBrowser" finished-at="2021-11-10T17:06:15 IST" duration-ms="22219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_003 -->
+      <class name="com.trello.android.testscripts.Trello_002">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_002@2e385cce]" started-at="2021-11-10T16:59:06 IST" name="launchApp" finished-at="2021-11-10T16:59:28 IST" duration-ms="21540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_002(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_002@2e385cce]" started-at="2021-11-10T16:59:28 IST" name="tc_Trello_002" description="Description: Verify that whether user is able to Close the board after creating board and multiple list" data-provider="data1" finished-at="2021-11-10T17:02:08 IST" duration-ms="159770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Pages Identification]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_002 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_002@2e385cce]" started-at="2021-11-10T17:02:08 IST" name="closeBrowser" finished-at="2021-11-10T17:02:09 IST" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_002 -->
+      <class name="com.trello.android.testscripts.Trello_001">
+        <test-method is-config="true" signature="createFiles(java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_001@3c77d488]" started-at="2021-11-10T16:56:01 IST" name="createFiles" finished-at="2021-11-10T16:56:01 IST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createFiles -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_001@3c77d488]" started-at="2021-11-10T16:56:02 IST" name="launchApp" finished-at="2021-11-10T16:56:25 IST" duration-ms="23090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_001(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_001@3c77d488]" started-at="2021-11-10T16:56:27 IST" name="tc_Trello_001" description="Description: Verify that whether user is able to move the card after creating board and multiple list" data-provider="data1" finished-at="2021-11-10T16:59:04 IST" duration-ms="156833" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[TestCase Writing]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_001 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_001@3c77d488]" started-at="2021-11-10T16:59:04 IST" name="closeBrowser" finished-at="2021-11-10T16:59:06 IST" duration-ms="1946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="killTask(java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_001@3c77d488]" started-at="2021-11-10T17:27:18 IST" name="killTask" finished-at="2021-11-10T17:27:18 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mobile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killTask -->
+      </class> <!-- com.trello.android.testscripts.Trello_001 -->
+      <class name="com.trello.android.testscripts.Trello_010">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_010@7526515b]" started-at="2021-11-10T17:24:39 IST" name="launchApp" finished-at="2021-11-10T17:25:00 IST" duration-ms="21043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_010(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_010@7526515b]" started-at="2021-11-10T17:25:00 IST" name="tc_Trello_010" description="Description: Verify that whether user is able to Stared the board" data-provider="data1" finished-at="2021-11-10T17:27:15 IST" duration-ms="135667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_010]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Script distribution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_010 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_010@7526515b]" started-at="2021-11-10T17:27:15 IST" name="closeBrowser" finished-at="2021-11-10T17:27:17 IST" duration-ms="1714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_010 -->
+      <class name="com.trello.android.testscripts.Trello_009">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_009@644baf4a]" started-at="2021-11-10T17:22:05 IST" name="launchApp" finished-at="2021-11-10T17:22:27 IST" duration-ms="22061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_009(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_009@644baf4a]" started-at="2021-11-10T17:22:27 IST" name="tc_Trello_009" description="Description: Verify that whether user is able to send the archieved List to Board Again" data-provider="data1" finished-at="2021-11-10T17:24:37 IST" duration-ms="130123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_009]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Script distribution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_009 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_009@644baf4a]" started-at="2021-11-10T17:24:37 IST" name="closeBrowser" finished-at="2021-11-10T17:24:39 IST" duration-ms="1731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_009 -->
+      <class name="com.trello.android.testscripts.Trello_008">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_008@f78a47e]" started-at="2021-11-10T17:19:28 IST" name="launchApp" finished-at="2021-11-10T17:19:50 IST" duration-ms="22018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_008(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_008@f78a47e]" started-at="2021-11-10T17:19:50 IST" name="tc_Trello_008" description="Description: Verify that whether user is able to Archiev the list" data-provider="data1" finished-at="2021-11-10T17:22:03 IST" duration-ms="132863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_008]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Script distribution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_008 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_008@f78a47e]" started-at="2021-11-10T17:22:03 IST" name="closeBrowser" finished-at="2021-11-10T17:22:05 IST" duration-ms="1902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_008 -->
+      <class name="com.trello.android.testscripts.Trello_007">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:com.trello.android.testscripts.Trello_007@f0c8a99]" started-at="2021-11-10T17:16:19 IST" name="launchApp" finished-at="2021-11-10T17:16:41 IST" duration-ms="21938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="tc_Trello_007(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.trello.android.testscripts.Trello_007@f0c8a99]" started-at="2021-11-10T17:16:41 IST" name="tc_Trello_007" description="Description:Verify that whether user is able to move the List to the different position in the Same Board" data-provider="data1" finished-at="2021-11-10T17:19:26 IST" duration-ms="164553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trello_007]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[To Do]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Doing]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Done]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Script distribution]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[POM Page Creation]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Trello Project]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[To Done Now]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_Trello_007 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.trello.android.testscripts.Trello_007@f0c8a99]" started-at="2021-11-10T17:19:26 IST" name="closeBrowser" finished-at="2021-11-10T17:19:28 IST" duration-ms="1801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.trello.android.testscripts.Trello_007 -->
+    </test> <!-- trello -->
+  </suite> <!-- trello -->
+</testng-results>

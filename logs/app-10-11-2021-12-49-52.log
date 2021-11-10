@@ -1,0 +1,18 @@
+2021-11-10 12:49:53,000 697  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 12:49:53,156 853  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 12:49:53,157 854  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 12:49:53,161 858  [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-10 12:49:53,164 861  [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_10_2021_12_49_53
+2021-11-10 12:49:53,438 1135 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-10 12:49:53,439 1136 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-10 12:49:58,210 5907 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:49:58,554 6251 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:49:59,000 6697 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:49:59,417 7114 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:49:59,633 7330 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:49:59,810 7507 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:50:00,053 7750 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:50:00,253 7950 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:50:00,463 8160 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:50:00,695 8392 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-10 12:50:01,950 9647 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped

@@ -1,0 +1,71 @@
+2021-11-09 22:57:47,357 448  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 22:57:52,109 5200 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 22:57:52,110 5201 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 22:57:52,115 5206 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 22:57:52,120 5211 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_22_57_52
+2021-11-09 22:57:52,273 5364 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 22:57:52,275 5366 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-09 22:58:14,797 27888 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon
+2021-11-09 22:58:16,432 29523 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Plus Icon is clickable
+2021-11-09 22:58:17,419 30510 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Plus Icon
+2021-11-09 22:58:17,434 30525 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Boards Icon
+2021-11-09 22:58:18,842 31933 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Boards Icon is clickable
+2021-11-09 22:58:19,822 32913 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Boards Icon
+2021-11-09 22:58:19,823 32914 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Textbox
+2021-11-09 22:58:27,137 40228 [main] INFO  com.trello.android.baseutil.BaseTest - Trello_001 is entered into Board Name Textbox
+2021-11-09 22:58:27,137 40228 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 22:58:28,454 41545 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 22:58:29,008 42099 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 22:58:29,009 42100 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 22:58:39,517 52608 [main] INFO  com.trello.android.baseutil.BaseTest - Expected Board :Trello_001 Matched with Actual Board :Trello_001
+2021-11-09 22:58:39,521 52612 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add List Button
+2021-11-09 22:58:41,442 54533 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add List Button is clickable
+2021-11-09 22:58:43,353 56444 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add List Button
+2021-11-09 22:58:43,354 56445 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name TextBox
+2021-11-09 22:58:45,672 58763 [main] INFO  com.trello.android.baseutil.BaseTest - To Do is entered into List Name TextBox
+2021-11-09 22:58:45,672 58763 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 22:58:46,385 59476 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 22:58:46,742 59833 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 22:58:48,344 61435 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 22:58:48,529 61620 [main] INFO  com.trello.android.baseutil.BaseTest - Expected List :To Do Matched with Actual List :To Do
+2021-11-09 22:58:48,616 61707 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add Card Button
+2021-11-09 22:58:48,789 61880 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add Card Button is clickable
+2021-11-09 22:58:48,950 62041 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add Card Button
+2021-11-09 22:58:50,741 63832 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Card Name TextBox
+2021-11-09 22:58:51,791 64882 [main] INFO  com.trello.android.baseutil.BaseTest - TestCase Writing is entered into Card Name TextBox
+2021-11-09 22:58:51,792 64883 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 22:58:53,240 66331 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 22:58:53,557 66648 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 22:58:56,660 69751 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Card Name Text
+2021-11-09 22:58:56,870 69961 [main] INFO  com.trello.android.baseutil.BaseTest - Expected Card :TestCase Writing Matched with Actual Card :TestCase Writing
+2021-11-09 22:58:56,871 69962 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add List Button
+2021-11-09 22:58:57,146 70237 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add List Button is clickable
+2021-11-09 22:58:57,633 70724 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add List Button
+2021-11-09 22:58:57,633 70724 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name TextBox
+2021-11-09 22:59:00,052 73143 [main] INFO  com.trello.android.baseutil.BaseTest - Doing is entered into List Name TextBox
+2021-11-09 22:59:00,053 73144 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 22:59:01,387 74478 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 22:59:01,696 74787 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 22:59:04,205 77296 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 22:59:04,353 77444 [main] INFO  com.trello.android.baseutil.BaseTest - Expected List :Doing Matched with Actual List :Doing
+2021-11-09 22:59:04,431 77522 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drag
+2021-11-09 22:59:04,569 77660 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drop
+2021-11-09 22:59:10,669 83760 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Actions Board
+2021-11-09 22:59:31,948 105039 [main] INFO  com.trello.android.baseutil.BaseTest - Validate List Actions Board is clickable
+2021-11-09 22:59:32,262 105353 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : List Actions Board
+2021-11-09 22:59:32,263 105354 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Boards Settings
+2021-11-09 22:59:34,206 107297 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Boards Settings is clickable
+2021-11-09 22:59:35,389 108480 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Boards Settings
+2021-11-09 22:59:35,390 108481 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Close Boards
+2021-11-09 22:59:47,191 120282 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Close Boards completed
+2021-11-09 22:59:47,192 120283 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Close Boards
+2021-11-09 22:59:47,869 120960 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Close Boards is clickable
+2021-11-09 22:59:48,509 121600 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Close Boards
+2021-11-09 22:59:54,039 127130 [main] ERROR com.trello.android.baseutil.BaseTest - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E80DE1T', ip: '100.71.70.125', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: home.HomeActivity, appPackage: com.trello, databaseEnabled: false, desired: {appActivity: home.HomeActivity, appPackage: com.trello, deviceName: Android, fullReset: false, noReset: true, platformName: android}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 320, deviceScreenSize: 768x1280, deviceUDID: emulator-5554, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1136, left: 0, top: 48, width: 768}, warnings: {}, webStorageEnabled: false}
+Session ID: 788e9011-e8d9-4991-902f-e70bb0298eb5
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='TestCase Writing']/ancestor::android.widget.FrameLayout[@resource-id='com.trello:id/content_view_wrapper']/descendant::android.widget.TextView[@text='This board is closed.']}

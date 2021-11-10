@@ -1,0 +1,85 @@
+2021-11-09 16:16:11,290 533  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 16:16:14,362 3605 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 16:16:14,363 3606 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 16:16:14,367 3610 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 16:16:14,371 3614 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_16_16_14
+2021-11-09 16:16:14,601 3844 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 16:16:14,602 3845 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-09 16:16:36,927 26170 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon
+2021-11-09 16:16:37,765 27008 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Plus Icon is clickable
+2021-11-09 16:16:38,897 28140 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Plus Icon
+2021-11-09 16:16:38,908 28151 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Boards Icon
+2021-11-09 16:16:41,601 30844 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Boards Icon is clickable
+2021-11-09 16:16:42,998 32241 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Boards Icon
+2021-11-09 16:16:43,001 32244 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Textbox
+2021-11-09 16:16:46,938 36181 [main] INFO  com.trello.android.baseutil.BaseTest - Trello_001 is entered into Board Name Textbox
+2021-11-09 16:16:46,939 36182 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 16:16:48,057 37300 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 16:16:48,436 37679 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 16:16:48,437 37680 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 16:16:54,963 44206 [main] INFO  com.trello.android.baseutil.BaseTest - Expected Board :Trello_001 Matched with Actual Board :Trello_001
+2021-11-09 16:16:54,967 44210 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add List Button
+2021-11-09 16:16:55,339 44582 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add List Button is clickable
+2021-11-09 16:16:55,895 45138 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add List Button
+2021-11-09 16:16:55,895 45138 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name TextBox
+2021-11-09 16:16:58,888 48131 [main] INFO  com.trello.android.baseutil.BaseTest - To Do is entered into List Name TextBox
+2021-11-09 16:16:58,889 48132 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 16:16:59,925 49168 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 16:17:00,196 49439 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 16:17:01,460 50703 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 16:17:01,633 50876 [main] INFO  com.trello.android.baseutil.BaseTest - Expected List :To Do Matched with Actual List :To Do
+2021-11-09 16:17:01,733 50976 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add Card Button
+2021-11-09 16:17:01,875 51118 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add Card Button is clickable
+2021-11-09 16:17:01,959 51202 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add Card Button
+2021-11-09 16:17:03,543 52786 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Card Name TextBox
+2021-11-09 16:17:04,681 53924 [main] INFO  com.trello.android.baseutil.BaseTest - TestCase Writing is entered into Card Name TextBox
+2021-11-09 16:17:04,681 53924 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 16:17:05,718 54961 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 16:17:06,073 55316 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 16:17:09,204 58447 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Card Name Text
+2021-11-09 16:17:09,327 58570 [main] INFO  com.trello.android.baseutil.BaseTest - Expected Card :TestCase Writing Matched with Actual Card :TestCase Writing
+2021-11-09 16:17:09,328 58571 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add List Button
+2021-11-09 16:17:09,635 58878 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add List Button is clickable
+2021-11-09 16:17:10,051 59294 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add List Button
+2021-11-09 16:17:10,052 59295 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name TextBox
+2021-11-09 16:17:13,189 62432 [main] INFO  com.trello.android.baseutil.BaseTest - Doing is entered into List Name TextBox
+2021-11-09 16:17:13,190 62433 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 16:17:14,790 64033 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 16:17:15,101 64344 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 16:17:16,521 65764 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 16:17:16,662 65905 [main] INFO  com.trello.android.baseutil.BaseTest - Expected List :Doing Matched with Actual List :Doing
+2021-11-09 16:17:16,732 65975 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drag
+2021-11-09 16:17:16,880 66123 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drop
+2021-11-09 16:17:23,598 72841 [main] INFO  com.trello.android.baseutil.BaseTest - Drag and Drop Completed
+2021-11-09 16:17:23,996 73239 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name
+2021-11-09 16:17:24,173 73416 [main] INFO  com.trello.android.baseutil.BaseTest - Drag Card : TestCase Writing And Drop To : Doing List Successfully
+2021-11-09 16:17:24,174 73417 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Add List Button
+2021-11-09 16:17:25,127 74370 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Add List Button is clickable
+2021-11-09 16:17:25,697 74940 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Add List Button
+2021-11-09 16:17:25,698 74941 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name TextBox
+2021-11-09 16:17:28,838 78081 [main] INFO  com.trello.android.baseutil.BaseTest - Done is entered into List Name TextBox
+2021-11-09 16:17:28,839 78082 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-09 16:17:29,944 79187 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable
+2021-11-09 16:17:30,262 79505 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Confirm Tick Mark
+2021-11-09 16:17:31,662 80905 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Text
+2021-11-09 16:17:31,817 81060 [main] INFO  com.trello.android.baseutil.BaseTest - Expected List :Done Matched with Actual List :Done
+2021-11-09 16:17:31,896 81139 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drag
+2021-11-09 16:17:32,048 81291 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Element To Drop
+2021-11-09 16:17:38,750 87993 [main] INFO  com.trello.android.baseutil.BaseTest - Drag and Drop Completed
+2021-11-09 16:17:39,144 88387 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Name
+2021-11-09 16:17:39,336 88579 [main] INFO  com.trello.android.baseutil.BaseTest - Drag Card : TestCase Writing And Drop To : Done List Successfully
+2021-11-09 16:17:39,337 88580 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of List Actions Board
+2021-11-09 16:17:39,585 88828 [main] INFO  com.trello.android.baseutil.BaseTest - Validate List Actions Board is clickable
+2021-11-09 16:17:39,907 89150 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : List Actions Board
+2021-11-09 16:17:39,908 89151 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Boards Settings
+2021-11-09 16:17:41,228 90471 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Boards Settings is clickable
+2021-11-09 16:17:42,410 91653 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Boards Settings
+2021-11-09 16:17:42,411 91654 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Close Boards
+2021-11-09 16:17:47,460 96703 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Close Boards completed
+2021-11-09 16:17:47,461 96704 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Close Boards
+2021-11-09 16:17:48,399 97642 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Close Boards is clickable
+2021-11-09 16:17:49,408 98651 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Close Boards
+2021-11-09 16:17:50,567 99810 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of This board is closed text
+2021-11-09 16:17:50,668 99911 [main] INFO  com.trello.android.baseutil.BaseTest - Validate This board is closed text is displayed
+2021-11-09 16:17:50,699 99942 [main] INFO  com.trello.android.baseutil.BaseTest - This board is closed text is displayed
+2021-11-09 16:17:52,993 102236 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped

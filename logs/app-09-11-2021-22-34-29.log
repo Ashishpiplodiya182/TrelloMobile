@@ -1,0 +1,9 @@
+2021-11-09 22:34:29,421 458  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 22:34:31,829 2866 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 22:34:31,830 2867 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 22:34:31,830 2867 [main] INFO  com.trello.android.baseutil.BaseTest - Launching the Emulator
+2021-11-09 22:34:57,482 28519 [main] INFO  com.trello.android.baseutil.BaseTest - Emulator launched successfully!
+2021-11-09 22:34:57,487 28524 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 22:34:57,492 28529 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_22_34_57
+2021-11-09 22:34:57,642 28679 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 22:34:57,643 28680 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created

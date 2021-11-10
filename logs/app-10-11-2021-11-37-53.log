@@ -1,0 +1,32 @@
+2021-11-10 11:37:53,983 515  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 11:37:54,134 666  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 11:37:54,135 667  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 11:37:54,140 672  [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-10 11:37:54,144 676  [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_10_2021_11_37_54
+2021-11-10 11:37:54,406 938  [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-10 11:37:54,407 939  [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-10 11:38:25,327 31859 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of login button
+2021-11-10 11:38:25,821 32353 [main] INFO  com.trello.android.baseutil.BaseTest - Validate login button is clickable
+2021-11-10 11:38:26,306 32838 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : login button
+2021-11-10 11:38:26,317 32849 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Email Textbox
+2021-11-10 11:38:30,089 36621 [main] INFO  com.trello.android.baseutil.BaseTest - ashishpiplodiya3@gmail.com is entered into Email Textbox
+2021-11-10 11:38:30,090 36622 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Next Button
+2021-11-10 11:38:31,386 37918 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Next Button is clickable
+2021-11-10 11:38:31,979 38511 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Next Button
+2021-11-10 11:38:37,676 44208 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of User Account
+2021-11-10 11:38:37,795 44327 [main] INFO  com.trello.android.baseutil.BaseTest - Validate User Account is clickable
+2021-11-10 11:38:37,903 44435 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : User Account
+2021-11-10 11:38:37,904 44436 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Menu Icon
+2021-11-10 11:38:43,816 50348 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Menu Icon is clickable
+2021-11-10 11:38:44,444 50976 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Menu Icon
+2021-11-10 11:38:44,445 50977 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Settings Link
+2021-11-10 11:38:45,617 52149 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Settings Link completed
+2021-11-10 11:38:45,622 52154 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Settings Link
+2021-11-10 11:38:47,554 54086 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Settings Link is clickable
+2021-11-10 11:38:48,372 54904 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Settings Link
+2021-11-10 11:38:48,373 54905 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Settings Link
+2021-11-10 11:38:54,960 61492 [main] INFO  com.trello.android.baseutil.BaseTest - Scroll till the Settings Link completed
+2021-11-10 11:38:54,961 61493 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of logout Link
+2021-11-10 11:38:55,847 62379 [main] INFO  com.trello.android.baseutil.BaseTest - Validate logout Link is clickable
+2021-11-10 11:38:56,326 62858 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : logout Link
+2021-11-10 11:39:04,343 70875 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped

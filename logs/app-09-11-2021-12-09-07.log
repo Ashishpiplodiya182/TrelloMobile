@@ -1,0 +1,9 @@
+2021-11-09 12:09:07,141 340  [main] INFO  com.trello.android.baseutil.BaseTest_2 - Starting the Appium Server
+2021-11-09 12:09:10,201 3400 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server started
+2021-11-09 12:09:10,202 3401 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 12:09:10,208 3407 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Folder creation for Extent
+2021-11-09 12:09:10,212 3411 [main] INFO  com.trello.android.baseutil.BaseTest_2 - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_12_09_10
+2021-11-09 12:09:10,413 3612 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Report Initiated
+2021-11-09 12:09:10,415 3614 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Screenshot folder created
+2021-11-09 12:10:11,377 64576 [main] ERROR com.trello.android.baseutil.BaseTest_2 - Unable to close the driver
+2021-11-09 12:10:12,407 65606 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium server stopped

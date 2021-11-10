@@ -1,0 +1,11 @@
+2021-11-09 12:46:26,433 632  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 12:46:28,850 3049 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 12:46:28,852 3051 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 12:46:28,852 3051 [main] INFO  com.trello.android.baseutil.BaseTest - Launching the Emulator
+2021-11-09 12:48:08,893 103092 [main] INFO  com.trello.android.baseutil.BaseTest - Emulator launched successfully!
+2021-11-09 12:48:08,926 103125 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 12:48:08,933 103132 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_12_48_08
+2021-11-09 12:48:09,947 104146 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 12:48:09,952 104151 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-09 12:49:11,820 166019 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to close the driver
+2021-11-09 12:49:52,561 206760 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon

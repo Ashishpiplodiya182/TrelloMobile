@@ -1,0 +1,14 @@
+2021-11-09 12:07:36,182 3659 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server URL http://127.0.0.1:4723/wd/hub
+2021-11-09 12:07:36,186 3663 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server started
+2021-11-09 12:07:36,189 3666 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Folder creation for Extent
+2021-11-09 12:07:36,200 3677 [main] INFO  com.trello.android.baseutil.BaseTest_2 - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_12_07_36
+2021-11-09 12:07:36,381 3858 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Report Initiated
+2021-11-09 12:07:36,382 3859 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Screenshot folder created
+2021-11-09 12:08:02,952 30429 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Application launched
+2021-11-09 12:08:05,918 33395 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Plus Icon
+2021-11-09 12:08:06,617 34094 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Validate Plus Icon is clickable
+2021-11-09 12:08:07,330 34807 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Clicked on : Plus Icon
+2021-11-09 12:08:07,337 34814 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Boards Icon
+2021-11-09 12:08:08,638 36115 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Validate Boards Icon is clickable
+2021-11-09 12:08:10,679 38156 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Clicked on : Boards Icon
+2021-11-09 12:08:10,681 38158 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Board Name Textbox

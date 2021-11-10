@@ -1,0 +1,3163 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='UTF-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Trello</title>
+
+	<style type='text/css'>
+			
+        
+            .report-name { padding-left: 10px; } .report-name > img { float: 
+      left;height: 90%;margin-left: 30px;margin-top: 2px;width: auto; }
+        
+		
+	</style>
+</head>
+
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>
+		
+		 		 
+       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/1280px-Trello_logo.svg.png" alt="image" style="width:160px">
+      <img src="https://media-exp1.licdn.com/dms/image/C561BAQHfYU2t8d7sKw/company-background_10000/0/1589449845968?e=2159024400&v=beta&t=aveVT_TJ3yli56xhLeYtXZ-GUGaciV7ZqGKZ0kRW1dc" alt="image" width="150" height="45"/>
+           
+			
+
+		</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Nov 10, 2021 04:56:01 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='21.694%'><span class='strong'>105</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='78.306%'>379</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_001</span>
+						<span class='test-time'>Nov 10, 2021 04:56:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 04:56:27 PM</span>
+	<span class='label end-time'>Nov 10, 2021 04:59:04 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 36s+802ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_001</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 04:59:04 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 36s+798ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to move the card after creating board and multiple list</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:56:39 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:56:42 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:56:55 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:56:55 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:15 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:17 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:21 PM</td>
+													<td class='step-details'>Trello_001 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:23 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:25 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_001 Matched with Actual Board :Trello_001</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:26 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:29 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:31 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:32 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:32 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:35 PM</td>
+													<td class='step-details'>TestCase Writing is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:37 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:57:40 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :TestCase Writing Matched with Actual Card :TestCase Writing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:40 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:45 PM</td>
+													<td class='step-details'>Clicked on : Add Checklist Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:50 PM</td>
+													<td class='step-details'>Trello Project is entered into Add Item Text Field</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:51 PM</td>
+													<td class='step-details'>Clicked on : Accept Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:54 PM</td>
+													<td class='step-details'>Clicked on : Reject Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:58 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:57:59 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:03 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:04 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:06 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:17 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : TestCase Writing And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:17 PM</td>
+													<td class='step-details'><span class='label white-text green'>TestCase Writing : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:18 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:22 PM</td>
+													<td class='step-details'>Done is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:24 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:26 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Done Matched with Actual List :Done</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:37 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : TestCase Writing And Drop To : Done List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:37 PM</td>
+													<td class='step-details'><span class='label white-text green'>TestCase Writing : Card Moved Successfully To Done List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:37 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:40 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:45 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:47 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:48 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:58:48 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:49 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:51 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:52 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:58:53 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:00 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:02 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:04 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:04 PM</td>
+													<td class='step-details'>tc_Trello_001-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_002</span>
+						<span class='test-time'>Nov 10, 2021 04:59:28 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 04:59:28 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:02:08 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 39s+769ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_002</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:02:08 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 39s+769ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to Close the board after creating board and multiple list</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:42 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:45 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>4:59:58 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>4:59:58 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:20 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:22 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:26 PM</td>
+													<td class='step-details'>Trello_002 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:28 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:30 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_002 Matched with Actual Board :Trello_002</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:31 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:34 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:36 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:37 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:38 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:41 PM</td>
+													<td class='step-details'>Pages Identification is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:42 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:00:45 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Pages Identification Matched with Actual Card :Pages Identification</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:46 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:49 PM</td>
+													<td class='step-details'>Clicked on : Add Checklist Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:53 PM</td>
+													<td class='step-details'>Trello Project is entered into Add Item Text Field</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:55 PM</td>
+													<td class='step-details'>Clicked on : Accept Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:00:58 PM</td>
+													<td class='step-details'>Clicked on : Reject Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:01 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:02 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:06 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:07 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:10 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:21 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Pages Identification And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:21 PM</td>
+													<td class='step-details'><span class='label white-text green'>Pages Identification : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:21 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:25 PM</td>
+													<td class='step-details'>Done is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:27 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:28 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Done Matched with Actual List :Done</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:39 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Pages Identification And Drop To : Done List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:39 PM</td>
+													<td class='step-details'><span class='label white-text green'>Pages Identification : Card Moved Successfully To Done List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:40 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:42 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:47 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:50 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:51 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:01:51 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:52 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:54 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:56 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:01:57 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:02:04 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:02:05 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:02:08 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:02:08 PM</td>
+													<td class='step-details'>tc_Trello_002-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_003</span>
+						<span class='test-time'>Nov 10, 2021 05:02:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:02:40 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:05:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 3m 12s+655ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_003</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:05:53 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 3m 12s+655ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to Re-open the board after closing the board</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:02:46 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:02:49 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:01 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:03:01 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:21 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:23 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:27 PM</td>
+													<td class='step-details'>Trello_003 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:29 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:03:32 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_003 Matched with Actual Board :Trello_003</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:33 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:36 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:37 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:03:38 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:39 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:42 PM</td>
+													<td class='step-details'>Pages Distribution is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:44 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:03:47 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Pages Distribution Matched with Actual Card :Pages Distribution</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:47 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:51 PM</td>
+													<td class='step-details'>Clicked on : Add Checklist Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:55 PM</td>
+													<td class='step-details'>Trello Project is entered into Add Item Text Field</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:03:57 PM</td>
+													<td class='step-details'>Clicked on : Accept Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:00 PM</td>
+													<td class='step-details'>Clicked on : Reject Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:02 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:04 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:07 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:09 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:04:11 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:22 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Pages Distribution And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:04:22 PM</td>
+													<td class='step-details'><span class='label white-text green'>Pages Distribution : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:23 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:26 PM</td>
+													<td class='step-details'>Done is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:28 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:04:30 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Done Matched with Actual List :Done</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:40 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Pages Distribution And Drop To : Done List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:04:40 PM</td>
+													<td class='step-details'><span class='label white-text green'>Pages Distribution : Card Moved Successfully To Done List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:41 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:44 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:48 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:51 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:52 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:04:52 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:53 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:55 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:57 PM</td>
+													<td class='step-details'>Clicked on : Home Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:04:59 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:02 PM</td>
+													<td class='step-details'>Clicked on : Workspace Name Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:04 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Board under Closed Board completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:05 PM</td>
+													<td class='step-details'>Clicked on : Board under Closed Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:18 PM</td>
+													<td class='step-details'>Clicked on : Reopen Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:22 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Expected Board :Trello_003 Matched with Actual Board :Trello_003</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:05:22 PM</td>
+													<td class='step-details'><span class='label white-text green'>Trello_003 Opened Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:23 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:25 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:30 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:33 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:34 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:05:34 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:35 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:38 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:39 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:41 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:48 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:05:50 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:05:53 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:05:53 PM</td>
+													<td class='step-details'>tc_Trello_003-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_004</span>
+						<span class='test-time'>Nov 10, 2021 05:06:40 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:06:40 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:09:40 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 59s+905ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_004</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:09:40 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 59s+905ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description:Verify that whether user is able to move the card after Editing List name and Card name</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:06:55 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:06:58 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:11 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:07:11 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:33 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:35 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:39 PM</td>
+													<td class='step-details'>Trello_004 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:40 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:07:43 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_004 Matched with Actual Board :Trello_004</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:44 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:47 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:48 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:07:50 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:50 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:53 PM</td>
+													<td class='step-details'>Review TestCase is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:55 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:07:58 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Review TestCase Matched with Actual Card :Review TestCase</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:07:59 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:02 PM</td>
+													<td class='step-details'>Clicked on : Add Checklist Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:07 PM</td>
+													<td class='step-details'>Trello Project is entered into Add Item Text Field</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:10 PM</td>
+													<td class='step-details'>Clicked on : Accept Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:12 PM</td>
+													<td class='step-details'>Clicked on : Reject Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:14 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:15 PM</td>
+													<td class='step-details'>Clicked on : List Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:18 PM</td>
+													<td class='step-details'>To DO Till Evening is entered into List Name</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:08:19 PM</td>
+													<td class='step-details'><span class='label white-text green'>List Name Updated Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:19 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:25 PM</td>
+													<td class='step-details'>Clicked on : Card Name Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:26 PM</td>
+													<td class='step-details'>Script Writing is entered into Card Name Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:28 PM</td>
+													<td class='step-details'>Clicked on : Confirm TickMark For Edit Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:32 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:34 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:37 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:39 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:08:40 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:51 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Script Writing And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:08:51 PM</td>
+													<td class='step-details'><span class='label white-text green'>Script Writing : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:54 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:58 PM</td>
+													<td class='step-details'>Done is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:08:59 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:09:01 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Done Matched with Actual List :Done</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:12 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Script Writing And Drop To : Done List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:09:12 PM</td>
+													<td class='step-details'><span class='label white-text green'>Script Writing : Card Moved Successfully To Done List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:12 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:15 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:20 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:22 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:24 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:09:24 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:25 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:27 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:28 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:29 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:36 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:09:38 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:09:40 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:09:40 PM</td>
+													<td class='step-details'>tc_Trello_004-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_005</span>
+						<span class='test-time'>Nov 10, 2021 05:10:33 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:10:33 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:13:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 27s+378ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_005</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:13:00 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 27s+378ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description:Verify that whether user is able to move the all cards from one List to another List</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:10:34 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:10:37 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:10:49 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:10:49 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:12 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:14 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:18 PM</td>
+													<td class='step-details'>Trello_005 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:20 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:11:22 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_005 Matched with Actual Board :Trello_005</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:23 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:26 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:28 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:11:29 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:30 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:32 PM</td>
+													<td class='step-details'>Review TestCase is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:34 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:11:37 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Review TestCase Matched with Actual Card :Review TestCase</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:39 PM</td>
+													<td class='step-details'>POM Page Creation is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:41 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:11:45 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :POM Page Creation Matched with Actual Card :POM Page Creation</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:46 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:49 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:11:51 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:11:52 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:02 PM</td>
+													<td class='step-details'>Clicked on : List Actions</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:04 PM</td>
+													<td class='step-details'>Clicked on :  Move all Cards in this List Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:07 PM</td>
+													<td class='step-details'>Clicked on : Boards Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:08 PM</td>
+													<td class='step-details'>Clicked on : Boards Option</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:09 PM</td>
+													<td class='step-details'>Clicked on : List Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:11 PM</td>
+													<td class='step-details'>Clicked on : List Option</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:12 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:12:33 PM</td>
+													<td class='step-details'><span class='label white-text green'>Successfully moved the cards to Doing list</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:34 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:36 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:41 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:43 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:45 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:12:45 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:45 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:47 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:48 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:49 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:56 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:12:58 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:13:00 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:13:00 PM</td>
+													<td class='step-details'>tc_Trello_005-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_006</span>
+						<span class='test-time'>Nov 10, 2021 05:13:25 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:13:25 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:16:17 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 52s+0ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_006</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:16:17 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 52s+0ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description:Verify that whether user is able to copy the list and check all the contents are same as the old List in the new List</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:13:40 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:13:43 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:13:56 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:13:56 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:17 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:19 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:23 PM</td>
+													<td class='step-details'>Trello_006 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:25 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:14:28 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_006 Matched with Actual Board :Trello_006</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:29 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:32 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:33 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:14:35 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:35 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:38 PM</td>
+													<td class='step-details'>Script Writing is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:39 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:14:43 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Script Writing Matched with Actual Card :Script Writing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:44 PM</td>
+													<td class='step-details'>POM Page Creation is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:46 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:14:50 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :POM Page Creation Matched with Actual Card :POM Page Creation</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:51 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:54 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:14:57 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:14:59 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:08 PM</td>
+													<td class='step-details'>Clicked on : List Actions</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:10 PM</td>
+													<td class='step-details'>Clicked on : Copy List Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:15 PM</td>
+													<td class='step-details'>To Done Now is entered into List Name textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:17 PM</td>
+													<td class='step-details'>Clicked on : Boards Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:19 PM</td>
+													<td class='step-details'>Clicked on : Boards Option</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:20 PM</td>
+													<td class='step-details'>Clicked on : Position Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:22 PM</td>
+													<td class='step-details'>Clicked on : Position Options</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:23 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:15:50 PM</td>
+													<td class='step-details'><span class='label white-text green'>Succesfully Copied the List To  2 position</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:50 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:53 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:15:58 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:00 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:01 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:16:01 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:02 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:04 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:05 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:06 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:13 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:14 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:16:17 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:16:17 PM</td>
+													<td class='step-details'>tc_Trello_006-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_007</span>
+						<span class='test-time'>Nov 10, 2021 05:16:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:16:41 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:19:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 44s+548ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_007</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:19:26 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 44s+548ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description:Verify that whether user is able to move the List to the different position in the Same Board</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:56 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:16:59 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:12 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:17:12 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:30 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:32 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:36 PM</td>
+													<td class='step-details'>Trello_007 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:38 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:17:41 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_007 Matched with Actual Board :Trello_007</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:42 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:45 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:47 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:17:48 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:48 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:51 PM</td>
+													<td class='step-details'>Script distribution is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:53 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:17:56 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Script distribution Matched with Actual Card :Script distribution</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:58 PM</td>
+													<td class='step-details'>POM Page Creation is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:17:59 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:18:03 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :POM Page Creation Matched with Actual Card :POM Page Creation</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:04 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:07 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:09 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:18:10 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:20 PM</td>
+													<td class='step-details'>Clicked on : List Actions</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:22 PM</td>
+													<td class='step-details'>Clicked on : Move List Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:24 PM</td>
+													<td class='step-details'>Clicked on : Boards Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:26 PM</td>
+													<td class='step-details'>Clicked on : Boards Option</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:27 PM</td>
+													<td class='step-details'>Clicked on : Position Dropdown</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:29 PM</td>
+													<td class='step-details'>Clicked on : Position Options</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:30 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:18:58 PM</td>
+													<td class='step-details'><span class='label white-text green'>Succesfully Moved List To The 2 position</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:18:59 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:01 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:06 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:09 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:10 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:19:10 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:11 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:13 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:14 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:15 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:22 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:19:23 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:19:26 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:19:26 PM</td>
+													<td class='step-details'>tc_Trello_007-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_008</span>
+						<span class='test-time'>Nov 10, 2021 05:19:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:19:50 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:22:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 12s+862ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='16'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_008</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:22:03 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 12s+862ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to Archiev the list</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:05 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:07 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:20 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:20:20 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:41 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:43 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:47 PM</td>
+													<td class='step-details'>Trello_008 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:49 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:20:52 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_008 Matched with Actual Board :Trello_008</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:53 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:56 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:20:57 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:20:59 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:00 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:03 PM</td>
+													<td class='step-details'>Script distribution is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:04 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:21:08 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Script distribution Matched with Actual Card :Script distribution</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:08 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:12 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:13 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:21:15 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:26 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Script distribution And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:21:26 PM</td>
+													<td class='step-details'><span class='label white-text green'>Script distribution : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:27 PM</td>
+													<td class='step-details'>Clicked on : List Actions</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:29 PM</td>
+													<td class='step-details'>Clicked on : Archiev list Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:21:34 PM</td>
+													<td class='step-details'><span class='label white-text green'>DoingList Archieved Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:35 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:37 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:42 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:44 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:46 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:21:46 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:47 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:49 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:50 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:52 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:21:58 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:22:00 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:22:03 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:22:03 PM</td>
+													<td class='step-details'>tc_Trello_008-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_009</span>
+						<span class='test-time'>Nov 10, 2021 05:22:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:22:27 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:24:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 10s+119ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_009</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:24:37 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 10s+119ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to send the archieved List to Board Again</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:22:41 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:22:44 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:22:57 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:22:57 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:16 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:18 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:22 PM</td>
+													<td class='step-details'>Trello_009 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:24 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:23:27 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_009 Matched with Actual Board :Trello_009</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:27 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:30 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:32 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:23:33 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:33 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:36 PM</td>
+													<td class='step-details'>Script distribution is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:38 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:23:41 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Script distribution Matched with Actual Card :Script distribution</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:42 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:45 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:47 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:23:48 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:23:59 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Drag Card : Script distribution And Drop To : Doing List Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:23:59 PM</td>
+													<td class='step-details'><span class='label white-text green'>Script distribution : Card Moved Successfully To Doing List</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:01 PM</td>
+													<td class='step-details'>Clicked on : List Actions</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:03 PM</td>
+													<td class='step-details'>Clicked on : Archiev list Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:24:08 PM</td>
+													<td class='step-details'><span class='label white-text green'>DoingList Archieved Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:09 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:11 PM</td>
+													<td class='step-details'>Clicked on : Archieved list</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:15 PM</td>
+													<td class='step-details'>Clicked on : List Under Archieved List</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:16 PM</td>
+													<td class='step-details'>Clicked on : Send to Boards Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:19 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:21 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:24 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:25 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:26 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:33 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:24:34 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:24:37 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:24:37 PM</td>
+													<td class='step-details'>tc_Trello_009-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Trello_010</span>
+						<span class='test-time'>Nov 10, 2021 05:25:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Nov 10, 2021 05:25:00 PM</span>
+	<span class='label end-time'>Nov 10, 2021 05:27:15 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 2m 15s+666ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>tc_Trello_010</h5>
+						<span class="node-time label grey lighten-1 white-text">Nov 10, 2021 05:27:15 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 2m 15s+666ms</span>
+						<span class='test-status right pass'>pass</span>
+							<div class='node-desc'>Description: Verify that whether user is able to Stared the board</div>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:15 PM</td>
+													<td class='step-details'>Clicked on : login button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:18 PM</td>
+													<td class='step-details'>Clicked on : Sign In With Google Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:31 PM</td>
+													<td class='step-details'>Clicked on : User Account ashishpiplodiya3@gmail.com</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:25:31 PM</td>
+													<td class='step-details'><span class='label white-text green'>Login To The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:50 PM</td>
+													<td class='step-details'>Clicked on : Plus Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:53 PM</td>
+													<td class='step-details'>Clicked on : Boards Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:55 PM</td>
+													<td class='step-details'>Trello_010 is entered into Board Name Textbox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:25:57 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:00 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Board :Trello_010 Matched with Actual Board :Trello_010</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:01 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:04 PM</td>
+													<td class='step-details'>To Do is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:05 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:07 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :To Do Matched with Actual List :To Do</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:07 PM</td>
+													<td class='step-details'>Clicked on : Add Card Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:10 PM</td>
+													<td class='step-details'>Script distribution is entered into Card Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:11 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:15 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected Card :Script distribution Matched with Actual Card :Script distribution</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:15 PM</td>
+													<td class='step-details'>Clicked on : Card Name</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:18 PM</td>
+													<td class='step-details'>Clicked on : Add Checklist Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:23 PM</td>
+													<td class='step-details'>Trello Project is entered into Add Item Text Field</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:24 PM</td>
+													<td class='step-details'>Clicked on : Accept Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:27 PM</td>
+													<td class='step-details'>Clicked on : Reject Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:29 PM</td>
+													<td class='step-details'>Clicked on : Close Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:31 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:34 PM</td>
+													<td class='step-details'>Doing is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:36 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:37 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Doing Matched with Actual List :Doing</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:38 PM</td>
+													<td class='step-details'>Clicked on : Add List Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:41 PM</td>
+													<td class='step-details'>Done is entered into List Name TextBox</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:43 PM</td>
+													<td class='step-details'>Clicked on : Confirm Tick Mark</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:45 PM</td>
+													<td class='step-details'><span class='label white-text green'>Expected List :Done Matched with Actual List :Done</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:45 PM</td>
+													<td class='step-details'>Clicked on : List Actions Board</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:48 PM</td>
+													<td class='step-details'>Clicked on : Star Board Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:50 PM</td>
+													<td class='step-details'>Clicked on : Boards Settings</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:55 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Close Boards completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:58 PM</td>
+													<td class='step-details'>Clicked on : Close Boards</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:59 PM</td>
+													<td class='step-details'>This board is closed text is Displayed</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:26:59 PM</td>
+													<td class='step-details'><span class='label white-text green'>Board Closed Successfully</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:26:59 PM</td>
+													<td class='step-details'>Clicked on : Back Button</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:27:02 PM</td>
+													<td class='step-details'>Clicked on : Menu Icon</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:27:03 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Settings Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:27:04 PM</td>
+													<td class='step-details'>Clicked on : Settings Link</td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:27:11 PM</td>
+													<td class='step-details'><span class='label white-text blue'>Scroll till the Logout Link completed</span></td>
+												</tr>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>5:27:13 PM</td>
+													<td class='step-details'>Clicked on : logout Link</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:27:15 PM</td>
+													<td class='step-details'><span class='label white-text green'>Logout From The Application Successfully</span></td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>5:27:15 PM</td>
+													<td class='step-details'>tc_Trello_010-Test case passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>10</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>484</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Nov 10, 2021 04:56:01 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Nov 10, 2021 05:27:17 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 31m 15s+778ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 10,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				
+				passChild: 105,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 379,
+				exceptionsChild: 0,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 			
+        
+            $(document).ready(function() {
+  			$('.brand-logo.blue.darken-3').css('display','none');
+            });
+        
+       
+        
+        
+        var element=document.getElementsByClassName("left panel-name")[0];
+        element.innerHTML='<font size="5">Trello</font>';
+        element.style.fontSize = "18px";
+        element.style.color = "#8bff00";
+        
+
+
+ 
+        var element=document.getElementsByClassName("row")[0];
+        element.style.fontSize = "14px";
+        element.style.color = "#00ffff" ;
+        
+
+        
+        var element=document.getElementsByClassName("row")[1];
+        element.style.fontSize = "14px";
+        element.style.color = "#8bff00";
+        
+
+        
+        var element=document.getElementsByClassName('view-summary')[0].childNodes[1];
+        element.innerHTML='<font size="5">Automation Report Summary</font>';
+        element.style.fontSize = "12px";
+        element.style.color = "#8bff00";
+        
+        
+        
+ 		</script>
+	</body>
+	
+</html>

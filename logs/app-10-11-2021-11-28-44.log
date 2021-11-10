@@ -1,0 +1,28 @@
+2021-11-10 11:28:45,055 439  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 11:28:45,205 589  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 11:28:45,205 589  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 11:28:45,210 594  [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-10 11:28:45,213 597  [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_10_2021_11_28_45
+2021-11-10 11:28:45,549 933  [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-10 11:28:45,550 934  [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-10 11:29:17,920 33304 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of login button
+2021-11-10 11:29:18,411 33795 [main] INFO  com.trello.android.baseutil.BaseTest - Validate login button is clickable
+2021-11-10 11:29:18,989 34373 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : login button
+2021-11-10 11:29:18,996 34380 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Email Textbox
+2021-11-10 11:29:22,826 38210 [main] INFO  com.trello.android.baseutil.BaseTest - ashishpiplodiya3@gmail.com is entered into Email Textbox
+2021-11-10 11:29:22,827 38211 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Next Button
+2021-11-10 11:29:24,080 39464 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Next Button is clickable
+2021-11-10 11:29:24,703 40087 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Next Button
+2021-11-10 11:29:30,361 45745 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of User Account
+2021-11-10 11:29:30,504 45888 [main] INFO  com.trello.android.baseutil.BaseTest - Validate User Account is clickable
+2021-11-10 11:29:30,617 46001 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : User Account
+2021-11-10 11:29:30,618 46002 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon
+2021-11-10 11:29:38,796 54180 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Plus Icon is clickable
+2021-11-10 11:29:39,526 54910 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Plus Icon
+2021-11-10 11:29:39,527 54911 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Boards Icon
+2021-11-10 11:29:40,633 56017 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Boards Icon is clickable
+2021-11-10 11:29:42,566 57950 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Boards Icon
+2021-11-10 11:29:42,567 57951 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Board Name Textbox
+2021-11-10 11:29:46,333 61717 [main] INFO  com.trello.android.baseutil.BaseTest - Trello_001 is entered into Board Name Textbox
+2021-11-10 11:29:46,333 61717 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Confirm Tick Mark
+2021-11-10 11:29:47,499 62883 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Confirm Tick Mark is clickable

@@ -1,0 +1,4 @@
+2021-11-10 09:56:18,017 279  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 09:56:21,094 3356 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 09:56:21,095 3357 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 09:56:21,096 3358 [main] INFO  com.trello.android.baseutil.BaseTest - Launching the Emulator

@@ -1,0 +1,24 @@
+2021-11-10 11:54:49,973 520  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 11:54:50,128 675  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 11:54:50,129 676  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 11:54:50,137 684  [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-10 11:54:50,141 688  [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_10_2021_11_54_50
+2021-11-10 11:54:50,531 1078 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-10 11:54:50,532 1079 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-10 11:55:23,627 34174 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of login button
+2021-11-10 11:55:24,085 34632 [main] INFO  com.trello.android.baseutil.BaseTest - Validate login button is clickable
+2021-11-10 11:55:24,637 35184 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : login button
+2021-11-10 11:55:24,647 35194 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Email Textbox
+2021-11-10 11:55:28,567 39114 [main] INFO  com.trello.android.baseutil.BaseTest - ashishpiplodiya3@gmail.com is entered into Email Textbox
+2021-11-10 11:55:28,568 39115 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Next Button
+2021-11-10 11:55:29,815 40362 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Next Button is clickable
+2021-11-10 11:55:30,378 40925 [main] INFO  com.trello.android.baseutil.BaseTest - Clicked on : Next Button
+2021-11-10 11:55:41,484 52031 [main] ERROR com.trello.android.baseutil.BaseTest - An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-E80DE1T', ip: '100.76.15.74', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: home.HomeActivity, appPackage: com.trello, databaseEnabled: false, desired: {appActivity: home.HomeActivity, appPackage: com.trello, deviceName: Android, fullReset: false, noReset: true, platformName: android}, deviceApiLevel: 23, deviceManufacturer: samsung, deviceModel: SM-J700F, deviceName: 5203da1dfa6c53a5, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: 5203da1dfa6c53a5, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 6.0.1, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 907de5c4-cc01-4bec-8d00-e668ed9e5909
+*** Element info: {Using=xpath, value=//android.widget.TextView[@text='ashishpiplodiya3@gmail.com']}
+2021-11-10 11:55:45,097 55644 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped

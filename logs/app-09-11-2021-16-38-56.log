@@ -1,0 +1,14 @@
+2021-11-09 16:38:56,912 631  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-09 16:39:05,316 9035 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-09 16:39:05,318 9037 [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 16:39:05,323 9042 [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-09 16:39:05,357 9076 [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_16_39_05
+2021-11-09 16:39:06,113 9832 [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-09 16:39:06,114 9833 [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-09 16:40:05,382 69101 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon
+2021-11-09 16:40:26,447 90166 [main] ERROR com.trello.android.baseutil.BaseTest - Plus Icon is not visible
+2021-11-09 16:40:26,448 90167 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Plus Icon is clickable
+2021-11-09 16:40:53,489 117208 [main] ERROR com.trello.android.baseutil.BaseTest - Plus Icon is not clickable
+2021-11-09 16:40:53,490 117209 [main] ERROR com.trello.android.baseutil.BaseTest - Unable to click on Plus Icon
+2021-11-09 16:41:18,059 141778 [main] ERROR com.trello.android.baseutil.BaseTest - Expected condition failed: waiting for element to be clickable: Located by By.chained({By.xpath: //android.widget.ImageButton[@resource-id='com.trello:id/add_fab']}) (tried for 20 second(s) with 500 milliseconds interval)
+2021-11-09 16:41:26,373 150092 [main] INFO  com.trello.android.baseutil.BaseTest - Appium server stopped

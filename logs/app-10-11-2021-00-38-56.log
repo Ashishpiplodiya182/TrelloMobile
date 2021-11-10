@@ -1,0 +1,10 @@
+2021-11-10 00:38:56,868 463  [main] INFO  com.trello.android.baseutil.BaseTest - Starting the Appium Server
+2021-11-10 00:38:57,063 658  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server started
+2021-11-10 00:38:57,063 658  [main] INFO  com.trello.android.baseutil.BaseTest - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-10 00:38:57,070 665  [main] INFO  com.trello.android.baseutil.BaseTest - Folder creation for Extent
+2021-11-10 00:38:57,078 673  [main] INFO  com.trello.android.baseutil.BaseTest - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_10_2021_00_38_57
+2021-11-10 00:38:57,314 909  [main] INFO  com.trello.android.baseutil.BaseTest - Report Initiated
+2021-11-10 00:38:57,331 926  [main] INFO  com.trello.android.baseutil.BaseTest - Screenshot folder created
+2021-11-10 00:39:30,875 34470 [main] INFO  com.trello.android.baseutil.BaseTest - Wait for visibility of Plus Icon
+2021-11-10 00:39:54,180 57775 [main] ERROR com.trello.android.baseutil.BaseTest - Plus Icon is not visible
+2021-11-10 00:39:54,181 57776 [main] INFO  com.trello.android.baseutil.BaseTest - Validate Plus Icon is clickable

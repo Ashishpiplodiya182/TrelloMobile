@@ -1,0 +1,21 @@
+2021-11-09 12:18:47,695 304  [main] INFO  com.trello.android.baseutil.BaseTest_2 - Starting the Appium Server
+2021-11-09 12:18:49,992 2601 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server started
+2021-11-09 12:18:49,993 2602 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Appium Server URL: http://127.0.0.1:4723/wd/hub
+2021-11-09 12:18:50,000 2609 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Folder creation for Extent
+2021-11-09 12:18:50,005 2614 [main] INFO  com.trello.android.baseutil.BaseTest_2 - ExtentDir:-C:\Users\Dell\Desktop\Ashish_Appium\TrelloMobile/reports/Automation Report- 11_09_2021_12_18_50
+2021-11-09 12:18:50,195 2804 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Report Initiated
+2021-11-09 12:18:50,196 2805 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Screenshot folder created
+2021-11-09 12:19:18,790 31399 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Plus Icon
+2021-11-09 12:19:19,382 31991 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Validate Plus Icon is clickable
+2021-11-09 12:19:19,985 32594 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Clicked on : Plus Icon
+2021-11-09 12:19:19,993 32602 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Boards Icon
+2021-11-09 12:19:21,113 33722 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Validate Boards Icon is clickable
+2021-11-09 12:19:21,755 34364 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Clicked on : Boards Icon
+2021-11-09 12:19:21,756 34365 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Board Name Textbox
+2021-11-09 12:19:25,544 38153 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Trello_001 is entered into Board Name Textbox
+2021-11-09 12:19:25,545 38154 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Confirm Tick Mark
+2021-11-09 12:19:26,617 39226 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Validate Confirm Tick Mark is clickable
+2021-11-09 12:19:26,973 39582 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Clicked on : Confirm Tick Mark
+2021-11-09 12:19:26,973 39582 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Board Name Text
+2021-11-09 12:19:29,627 42236 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Expected Board :Trello_001 Matched with Actual Board :Trello_001
+2021-11-09 12:19:29,631 42240 [main] INFO  com.trello.android.baseutil.BaseTest_2 - Wait for visibility of Add List Button
